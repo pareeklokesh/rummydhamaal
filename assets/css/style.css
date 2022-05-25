@@ -5329,3 +5329,102 @@ select:focus {
   position: static;
   width: 100%;
 }
+.bannerbutton button {
+  font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;
+padding: 14px 35px;
+color: #fff;
+border: 0px;
+border-radius: 50px;
+cursor: pointer;
+background-image: linear-gradient(to left, #ff344d, #d2273c);
+outline: none !important;
+}
+.bannerbutton input, .bannerbutton button {
+  min-height: 52px;
+}
+
+.spiner {
+  font-size: 16px;
+  width: auto;
+  position: relative;
+}
+.spiner {
+  display: none;
+}
+.bannerbutton input {
+  width: auto;
+  padding: 8px 15px;
+    padding-left: 15px;
+  border-radius: 50px;
+  border: 0;
+  color: #a1aed4 !important;
+font-weight: 400 !important;
+font-size: 16px !important;
+min-width: 240px !important;
+display: inline-block;
+padding-left: 50px;
+background: #14193f;
+border: 1px solid #273b71;
+box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+min-width: 320px !important;
+}
+.numbertext {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  display: block;
+}
+.getbutton-mobile, .iphone-show {
+  display: none;
+}
+.link-sent {
+  color: #f8324a;
+  width: 100%;
+  margin-top: 15px;
+  display: block;
+}
+.spiner::before {
+  content: "";
+  animation: spin 2s linear infinite;
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid #fff;
+    border-top-color: rgb(255, 255, 255);
+  border-top-color: #051f35;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0px auto;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: -29px;
+}
+@keyframes spin {
+0% {
+  
+  transform: rotate(0deg);
+}
+100% {
+
+  transform: rotate(360deg);
+}
+}
+.getbutton {
+  min-width: 240px !important;
+}
+
+  @media (max-width: 768px) {
+.bannerbutton .getbutton-mobile {
+  width: 100%;
+}
+.getbutton-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bannerbutton input, .getbutton, .numbertext {
+  display: none !important;
+}
+}
