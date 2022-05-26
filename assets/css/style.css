@@ -5414,11 +5414,23 @@ min-width: 320px !important;
 .getbutton {
   min-width: 240px !important;
 }
+.game-slider-add .single-game {
+  height: auto !important;
+  min-height: 488px;
+}
+.game-slider-add .single-game p.mt-3.text-justify {
+  margin-top: 0 !important;
+}
 
-  @media (max-width: 768px) {
+  @media (max-width: 766px) {
 .bannerbutton .getbutton-mobile {
   width: 100%;
 }
+.game-slider-add .single-game {
+ 
+  min-height: 280px;
+}
+
 .getbutton-mobile {
   display: flex;
   align-items: center;
